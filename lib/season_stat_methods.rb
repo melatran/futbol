@@ -19,5 +19,19 @@ class SeasonStatMethods
     @games.games_list.find_all{|game| game.season == season}
   end
 
+  def find_winner_loser_of_game(game_id)
+    results = {:winner => nil, :loser => nil}
+    game = @games.games_list.find{|game| game.game_id == game_id}
+    if game.home_goals > game.away_goals
+      results[:winner] = game.home_team_id
+      results[:loser] = game.away_team_id
+    elsif game.home_goals < game.away_goals
+      results[:winner] = game.away_team_id
+      results[:loser] = game.home_team_id
+    end
+    results
+  end
+
+
 
 end#class
