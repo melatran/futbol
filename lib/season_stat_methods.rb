@@ -32,6 +32,22 @@ class SeasonStatMethods
     results
   end
 
+  def find_num_games_played_won_in_season(season, team_id)
+    results = {:games_played => 0, :games_won => 0}
+    games = all_games_of_season(season)
+    games.each do |game|
+      if game.away_team_id == team_id || game.home_team_id == team_id
+        results[:games_played] += 1
+        result = find_winner_loser_of_game(game.game_id)
+        if result[:winner] == team_id
+          results[:games_won] += 1
+        end
+      end
+    end
+    results
+  end
+
+
 
 
 end#class
