@@ -21,7 +21,7 @@ class SeasonStatMethodsTest < Minitest::Test
   end
 
   def test_find_winner_loser_of_game
-    result = {:winner => "9", :loser => "4"}
+    result = {:winner => "9", :loser => "13"}
     assert_equal result, @season_stat_methods.find_winner_loser_of_game("2012020598")
   end
 
@@ -32,6 +32,10 @@ class SeasonStatMethodsTest < Minitest::Test
 
   def test_winningest_coach
     assert_equal "John Hynes", @season_stat_methods.winningest_coach("20122013")
+  end
+
+  def test_worst_coach
+    assert_equal "Gerard Gallant", @season_stat_methods.worst_coach("20122013")
   end
 
 
