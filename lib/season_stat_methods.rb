@@ -15,4 +15,9 @@ class SeasonStatMethods
       "7"=>"Ron Rolston", "22"=>"Ralph Krueger", "53"=>"Dave Tippett" }
   end
 
+  def all_games_of_season(season)
+    @games.games_list.find_all{|game| game.season == season}
+  end
+
+
 end#class
