@@ -1,0 +1,13 @@
+game_id,season,type,date_time,away_team_id,home_team_id,away_goals,home_goals,venue,venue_link
+2012020122,20122013,Regular Season,2/3/13,1,2,3,0,Centruy Link Field,/api/v1/venues/null
+2012020320,20122013,Regular Season,3/5/13,1,10,3,2,WakeMed Soccer Park,/api/v1/venues/null
+2012020461,20122013,Regular Season,3/23/13,13,1,1,2,Mercedes-Benz Stadium,/api/v1/venues/null
+2012020205,20122013,Regular Season,2/17/13,9,10,0,3,WakeMed Soccer Park,/api/v1/venues/null
+2012020663,20122013,Regular Season,4/20/13,10,9,2,1,Yankee Stadium,/api/v1/venues/null
+2012020598,20122013,Regular Season,4/11/13,9,4,3,1,SeatGeek Stadium,/api/v1/venues/null
+2012020495,20122013,Regular Season,3/28/13,3,9,0,3,Yankee Stadium,/api/v1/venues/null
+2015030131,20152016,Postseason,4/14/16,4,15,0,2,Providence Park,/api/v1/venues/null
+2015030132,20152016,Postseason,4/16/16,4,15,1,2,Providence Park,/api/v1/venues/null
+2015030133,20152016,Postseason,4/18/16,15,4,4,1,SeatGeek Stadium,/api/v1/venues/null
+2015030134,20152016,Postseason,4/20/16,15,4,1,2,SeatGeek Stadium,/api/v1/venues/null
+2015030135,20152016,Postseason,4/22/16,4,15,2,0,Providence Park,/api/v1/venues/null
