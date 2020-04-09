@@ -47,7 +47,30 @@ class SeasonStatMethods
     results
   end
 
+  def winningest_coach(season)
+    best_percentage = 0
+    team_ids = []
+    games = all_games_of_season(season)
 
+    games.each do |game|
+      team_ids << game.away_team_id
+      team_ids << game.away_team_id
+    end
+    team_ids = team_ids.uniq
 
-
+    top_coach = nil
+    count = 0
+    games.each do |game|
+      while count <= team_ids.length
+        result = find_num_games_played_won_in_season(season, team_ids[count])
+        percentage = result[:games_won].to_f / result[:games_played]
+        if percentage > best_percentage
+          best_percentage = percentage
+          top_coach = team_ids[count]
+        end
+        count += 1
+      end
+    end
+    @all_coaches[top_coach]
+  end#winningest_coach
 end#class
