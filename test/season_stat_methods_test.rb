@@ -25,5 +25,11 @@ class SeasonStatMethodsTest < Minitest::Test
     assert_equal result, @season_stat_methods.find_winner_loser_of_game("2012020598")
   end
 
+  def test_find_num_games_played_won_in_season
+    result = {:games_played => 4, :games_won => 2}
+    assert_equal result, @season_stat_methods.find_num_games_played_won_in_season("20122013", "9")
+  end
+
+
 
 end
