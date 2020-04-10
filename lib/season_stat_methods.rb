@@ -1,5 +1,5 @@
 class SeasonStatMethods
-  attr_reader :games, :all_coaches
+  attr_reader :games, :game_stats
   def initialize(games, stats)
     @games = games
     @game_stats = stats

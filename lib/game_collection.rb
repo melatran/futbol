@@ -16,6 +16,4 @@ class GameCollection
       Game.new(row)
     end
   end
-
-
 end

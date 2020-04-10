@@ -1,6 +1,6 @@
 require_relative 'test_helper'
-require './lib/game_collection'
-require './lib/game'
+require_relative  'game_collection'
+require_relative  'game'
 
 class GameCollectionClass < Minitest::Test
   def setup

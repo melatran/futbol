@@ -1,13 +1,15 @@
 require_relative 'test_helper'
-require './lib/stat_tracker'
-require './lib/game_collection'
-require './lib/game_stats_collection'
-require './lib/season_stat_methods'
+require_relative  'stat_tracker'
+require_relative  'game_collection'
+require_relative  'game_stats_collection'
+require_relative  'season_stat_methods'
 
 class SeasonStatMethodsTest < Minitest::Test
   def setup
     @games = GameCollection.new('./test/fixtures/truncated_games2.csv')
+
     # @games = GameCollection.new('./data/games.csv')
+      require "pry";binding.pry
     @stats =GameStatsCollection.new('./data/game_teams.csv')
     @season_stat_methods = SeasonStatMethods.new(@games, @stats)
   end
@@ -43,10 +45,4 @@ class SeasonStatMethodsTest < Minitest::Test
   def test_worst_coach
     assert_equal "Gerard Gallant", @season_stat_methods.worst_coach("20122013")#20132014
   end
-
-
-
-
-
-
 end
