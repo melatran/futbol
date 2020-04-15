@@ -35,7 +35,6 @@ class SeasonStats < Collection
 
   def winningest_coach(season)
     games = games_by_season(season, @game_stats)
-    wins = team_wins_by_season(games)
     coach_names = coaches_by_season(games)
     percentage_tracker = -1
     name_tracker = nil
