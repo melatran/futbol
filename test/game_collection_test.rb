@@ -66,6 +66,13 @@ class GameCollectionClass < Minitest::Test
   def test_average_goals_by_season
     assert_equal ({"20122013"=>4.45, "20152016"=>4.67, "20142015"=>3.5}), @game_collection.average_goals_by_season
   end
+  
+    # def test_can_find_games
+  #   game1 = mock('game1')
+  #   game2 = mock('game2')
+  #   @game_collection.stubs(:find_all).returns([game1, game2])
+  #   assert_equal [game1, game2], @game_collection.all_games(5)
+  # end
 
   def test_can_find_games
     assert_equal 18, @game_collection.all_games(5).count
