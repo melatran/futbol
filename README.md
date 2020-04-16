@@ -1,5 +1,5 @@
 # Futbol
-## MOD 1 2003 Project
+## MOD 1 2003 Group Project
 
 #### Design Strategy
 
