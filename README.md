@@ -17,9 +17,11 @@ In our project, the main collection classes were Team_Collection, Games_Collecto
 #### The Modules
 
 *Mathable*
+
 This module includes common math equations that showed up throughout the project. The methods that we used in this module include a percentage and an average. Both were common calculations that appeared. A problem we did encounter was that for certain methods, the logic depended on another method and when we replaced it with the method, it caused our test to break.
 
 *Findable*
+
 This module includes methods used to locate other information throughout the test that is required quite often such as finding team names or using an id number to locate all the games the team played in. Within Findable, we also included methods that help locate information given a season to help reduce the code in our classes. Also the methods in the modules can be called on in the classes to faciliate another method to function in a way that returns a result we want. In short, a lot of methods in findable act as helper methods for the methods in our classes.
 
 #### Mocks and Stubs
@@ -27,6 +29,9 @@ Unfortunately, we tried and failed to incorporate mocks and stubs into our tests
 
 ## Group Members
 Melanie Tran
+
 Jack Puchalla
+
 Antonio Jackson
+
 Michael Gallup
