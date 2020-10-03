@@ -1,6 +1,23 @@
 # Futbol
 ## MOD 1 2003 Group Project
 
+Futbol uses data from a fictional soccer league to analyze team performance for specific seasons and across seasons. We want to see who the best and worst performers are, as well as be able to pull statistics for individual teams. To that end we will create a StatTracker class that will provide us with the information we need.
+
+### Learning Goals
+- Build classes with single responsibilities
+
+- Write organized readable code
+
+- Use TDD as a design strategy
+
+- Design an Object Oriented Solution to a problem
+
+- Practice algorithmic thinking
+
+- Work in a group
+
+- Use Pull Requests to collaborate among multiple partners
+
 #### Design Strategy
 
 We started with looking at each class that we had create to look for commonalities. The commonalities could then be used to create modules or a super parent the children can inherit from. While we were looking through the code, we also searched for duplications or unneccessary variables that are not called on throughout the method or the class. Our goal was to incorporate the refactor techniques we were introduced throughout the mod for the purpose of reducing the lines in our code. For the refactor part of our project, we utilized modules and a superclass.
